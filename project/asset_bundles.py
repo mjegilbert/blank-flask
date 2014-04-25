@@ -25,7 +25,6 @@ class HamlCoffeeFilter(Filter):
         out.write(_in.read())
 
 register_filter(HamlCoffeeFilter)
-
 if c.IS_PROD:
     js_filter = "jsmin"
     scss_output = "gen/application.%(version)s.scss"
@@ -63,7 +62,6 @@ css_all = Bundle(
 haml_files = []
 for root, dirnames, filenames in os.walk(HAML_PATH):
     for filename in fnmatch.filter(filenames, '*.haml'):
-        print filename
         asset_path = os.path.join(root, filename)[len(HAML_PATH) - 4:]
         haml_files.append(asset_path)
 
