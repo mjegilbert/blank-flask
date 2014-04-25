@@ -1,0 +1,9 @@
+alembic==0.6.4
+cssutils==1.0
+flask==0.10.1
+flask-assets==0.9
+flask-migrate==1.2.0
+flask-script==0.6.7
+flask-sqlalchemy==1.0
+ipython==2.0.0
+mysql-python==1.2.5

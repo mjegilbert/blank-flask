@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <meta http-equiv="Content-type" name="viewport" content="width=640">
+    {% assets "js_all" %}
+      <script type="text/javascript" src="{{ ASSET_URL }}"></script>
+    {% endassets %}
+
+    {% assets "css_all" %}
+      <link rel="stylesheet" type="text/css" href="{{ ASSET_URL }}">
+    {% endassets %}
+
+      <script id="bootstrapped-data" type="text/json">{{ data|safe }}</script>
+
+      <script>$(document).ready(function(){App.init($("#bootstrapped-data").text());})</script>
+
+    <title>Dropbox Internal Application</title>
+  </head>
+  <body>
+      <div id='content'></div>
+  </body>
+</html>
