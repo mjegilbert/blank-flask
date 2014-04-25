@@ -7,3 +7,4 @@ flask-script==0.6.7
 flask-sqlalchemy==1.0
 ipython==2.0.0
 mysql-python==1.2.5
+
