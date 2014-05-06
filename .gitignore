@@ -3,3 +3,4 @@
 vagrant
 *pyc
 *.webassets-cache
+project/static/gen/*
